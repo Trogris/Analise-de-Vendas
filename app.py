@@ -76,3 +76,8 @@ if file:
 
 else:
     st.info("Envie um arquivo Excel (.xlsx) para começar.")
+
+# 🔄 Botão para reiniciar
+if st.button("🔄 Reiniciar análise"):
+    st.cache_data.clear()
+    st.rerun()
